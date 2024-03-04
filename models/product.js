@@ -60,7 +60,6 @@ class Product {
       .find({ _id: new ObjectId(prodId) })
       .next()
       .then((data) => {
-        console.log(data, "result");
         return data;
       });
   }
